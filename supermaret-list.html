@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Reto lista de super mercado</title>
+  </head>
+  <style>
+    body{
+      background-color: #fafad2;
+      display: grid;
+    }
+    color: #161d32;
+    h1{
+      color: #ff0000;
+    }
+    a{
+      text-decoration: none;
+      color: #161d32;
+    }
+    a:hover{
+      color:yellowgreen;
+    }
+    section{
+      border-radius: 20px;
+      text-align: center;
+      display: inline-block;
+      padding: 20px;
+      margin: 10px;
+      align-items: center;
+      box-shadow: 0px 4px 10px 2px rgba(0,0,0,0.87);
+    }
+    .container{
+      box-shadow: 0px 0px;
+    }
+    .listFruits{
+      background-color: #ff65df;
+    }
+    .listVegetables{
+      background-color: #ff8a88;
+    }
+    .listGrooming{
+      background-color: #ffd85b;
+    }
+    header{
+      background-color: #ff634d;
+      color: #f1ffae;
+      text-align: center;
+      border-radius: 10px;
+    }
+    ul{
+      padding-left: 0;
+      list-style-type: none;
+      
+    }
+    li{
+      list-style-type: none;
+    }
+    .container{
+      grid-template-columns: auto;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Supermarket list</h1>
+    </header>
+    <section class="container">
+      <section class="listFruits">
+        <div>
+          <h3>Fruits</h3>
+          <ol>
+
+            <li><a href="https://www.google.com/search?q=recetas+con+naranja&sxsrf=APq-WBujgRUbjJql1p0dGxxMx1IynZwQFg%3A1647009417512&ei=iV4rYuvyHqOUwbkPxLyHiAY&oq=recetas+con+na&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAELADEEM6CQgAELADEAcQHjoKCAAQsQMQsAMQQzoICAAQgAQQsAM6CggAEOQCELADGAA6FQguEMcBENEDENQCEMgDELADEEMYAToSCC4QxwEQowIQyAMQsAMQQxgBOgQIIxAnOg4ILhCABBCxAxDHARCjAjoLCC4QgAQQxwEQ0QM6CwguEIAEELEDENQCOgUILhCABDoICAAQgAQQsQM6BwgjEOoCECc6CgguEMcBEKMCECc6CwgAEIAEELEDEIMBOhQILhCABBCxAxCDARDHARDRAxDUAjoLCC4QgAQQsQMQgwE6DgguEIAEELEDEMcBEK8BOgQIABBDOgcILhDUAhBDOgUIABCxA0oECEEYAUoECEYYAVDnDljjQ2CQVGgCcAB4A4ABowGIAbcSkgEEMS4xOJgBAKABAbABCsgBEcABAdoBBggAEAEYCdoBBggBEAEYCA&sclient=gws-wiz" target="_blank">
+              <figure>
+                <img src="./images/oranges.png" alt="Oranges">
+              </figure>Orange</a>
+            </li>
+
+            <li><a href="https://www.google.com/search?q=recetas+con+manzanas&sxsrf=APq-WBu-5oCSRn2CPIAEYKWlZA6YHWJJ_w%3A1647009433568&ei=mV4rYryoIpeSwbkP77WxoAE&oq=recetas+con+ma&gs_lcp=Cgdnd3Mtd2l6EAMYBDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsAM6BwgAELADEEM6CggAEOQCELADGAA6DAguEMgDELADEEMYAToECCMQJzoECAAQQzoICAAQgAQQsQM6CwgAEIAEELEDEIMBSgQIQRgASgQIRhgBUMsIWOocYKgwaAFwAXgAgAGsAYgB3AmSAQMwLjmYAQCgAQHIARLAAQHaAQYIABABGAnaAQYIARABGAg&sclient=gws-wiz" target="_blank">
+              <figure>
+                <img src="./images/apples.png" alt="Apples">
+              </figure>Apple</a>
+            </li>
+
+            <li><a href="https://www.google.com/search?q=recetas+con+pera&sxsrf=APq-WBtRzggf2B5FQdIcYcmSEwtaI7Sk1g%3A1647009590435&ei=Nl8rYsP8GfaSwbkPgYy-kAg&ved=0ahUKEwjD79DspL72AhV2STABHQGGD4IQ4dUDCA4&uact=5&oq=recetas+con+pera&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgAOgwILhDIAxCwAxBDGAE6BAgjECc6BAgAEEM6CAgAEIAEELEDOgsIABCABBCxAxCDAToKCAAQgAQQhwIQFEoECEEYAEoECEYYAVCEBFifHWCNH2gCcAF4AIABrQGIAa4NkgEEMC4xM5gBAKABAcgBE8ABAdoBBggAEAEYCdoBBggBEAEYCA&sclient=gws-wiz" target="_blank">
+              <figure>
+                <img src="./images/pears.png" alt="Pears">
+              </figure>Pear</a>
+            </li>
+
+            <li><a href="https://www.google.com/search?q=recetas+con+pi%C3%B1a&sxsrf=APq-WBv-ABYR_rhgNOOfQll95DFWkX7o9w%3A1647009683828&ei=k18rYriXMr6SwbkPvpyTuAk&ved=0ahUKEwj4rJWZpb72AhU-STABHT7OBJcQ4dUDCA4&uact=5&oq=recetas+con+pi%C3%B1a&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgQIIxAnOgQIABBDOggIABCABBCxAzoLCAAQgAQQsQMQgwFKBAhBGABKBAhGGABQuQZY9xlgqRpoAnABeACAAcUBiAHiBZIBAzAuNpgBAKABAcgBCsABAQ&sclient=gws-wiz" target="_blank">
+              <figure>
+                <img src="./images/pineapple.png" alt="Pineapple">
+              </figure>Pineapple</a>
+            </li>
+
+          </ol>
+        </div>
+      </section>
+
+      <section class="listVegetables">
+        <div>
+          <h3>Vegetables</h3>
+          <ol>
+            <li><a href="https://www.google.com/search?q=recetas+con+cebolla&sxsrf=APq-WBtarHPUXr2xTbLRo_o4JsLebFQwzg%3A1647009697854&ei=oV8rYs_jM9WDwbkP3q-dqAE&ved=0ahUKEwiPuO2fpb72AhXVQTABHd5XBxUQ4dUDCA4&uact=5&oq=recetas+con+cebolla&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgAOgwILhDIAxCwAxBDGAE6BAgjECc6BAgAEEM6CAgAEIAEELEDOgsIABCABBCxAxCDAUoECEEYAEoECEYYAVDzBVjWFmCwGWgBcAF4AIAByQGIAe8KkgEGMC4xMC4xmAEAoAEByAETwAEB2gEGCAAQARgJ2gEGCAEQARgI&sclient=gws-wiz" target="_blank">
+              <figure>
+                <img src="./images/onion.png" alt="onion">
+              </figure> Onion</a>
+            </li>
+
+            <li><a href="https://www.google.com/search?q=recetas+con+tomate&sxsrf=APq-WBsg0o2x2m2CnZCbwH9Frgd9un3lBQ%3A1647009717315&ei=tV8rYsvZEuKFwbkPxYe_uAM&oq=recetas+con+tom&gs_lcp=Cgdnd3Mtd2l6EAMYAjIFCAAQgAQyBQgAEIAEMgUIABCABDIKCAAQgAQQhwIQFDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoHCAAQRxCwAzoHCAAQsAMQQzoKCAAQ5AIQsAMYADoMCC4QyAMQsAMQQxgBOgQIIxAnOgQIABBDOggIABCABBCxAzoECAAQDUoECEEYAEoECEYYAVDEBViGHGDTJ2gDcAF4AIABtAGIAa0LkgEEMC4xMpgBAKABAcgBE8ABAdoBBggAEAEYCdoBBggBEAEYCA&sclient=gws-wiz" target="_blank">
+              <figure>
+                <img src="./images/tomatoes.png" alt="tomatoes">
+              </figure>Tomato</a>
+            </li>
+
+            <li><a href="https://www.google.com/search?q=recetas+con+arvejas&sxsrf=APq-WBscMJ8tbbI1_wOCuFX9c_Qmx4GN1g%3A1647009749762&ei=1V8rYr6BLouUwbkPt8e9wAE&oq=recetas+con+alv&gs_lcp=Cgdnd3Mtd2l6EAMYATIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjoKCAAQsQMQsAMQCjoHCAAQsAMQCjoECCMQJzoFCAAQgAQ6CAgAEIAEELEDOgsIABCABBCxAxCDAToHCAAQgAQQCjoKCAAQgAQQhwIQFEoECEEYAUoECEYYAFC2BFiAKmDGNmgDcAB4AIABlwGIAbAHkgEDMC44mAEAoAEByAEKwAEB&sclient=gws-wiz" target="_blank">
+              <figure>
+                <img src="./images/chickpeas.png" alt="chickpeas">
+              </figure> chickpeas</a>
+            </li>
+
+            <li><a href="https://www.google.com/search?q=recetas+con+ajo&sxsrf=APq-WBs_xadkdF0A4k72roz9H_n3nktHLg%3A1647009790896&ei=_l8rYoipNveNwbkPhqaqOA&ved=0ahUKEwiIoJzMpb72AhX3RjABHQaTCgcQ4dUDCA4&uact=5&oq=recetas+con+ajo&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQ_wNYkQlg-RFoAXABeACAAXaIAecBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz" target="_blank">
+              <figure>
+                <img src="./images/garlic.png" alt="garlic">
+              </figure> Garlic </a>
+            </li>
+
+          </ol>
+        </div>
+      </section>
+
+      <section class="listGrooming">
+        <h3>Grooming Products</h3>
+        <div>
+          <ol>
+            <li><a href="https://www.google.com/search?q=meteodo+limpiar+con+detergente&sxsrf=APq-WBu6hT6pBH2VWLVG8rS6VbK-TZ3Hkw%3A1647009794886&ei=AmArYobaNYzOwbkP5MiL8AE&ved=0ahUKEwiG44_Opb72AhUMZzABHWTkAh4Q4dUDCA4&uact=5&oq=meteodo+limpiar+con+detergente&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIIxCwAxAnOgcIABBHELADOgcIABCwAxBDOgQIIxAnOggIABCABBCxAzoRCC4QgAQQsQMQgwEQxwEQ0QM6CwgAEIAEELEDEIMBOggILhCABBCxAzoUCC4QgAQQsQMQgwEQxwEQ0QMQ1AI6BAguEEM6BwgAELEDEEM6BwguENQCEEM6CggAELEDEIMBEEM6BAgAEEM6BwgAEMkDEEM6CgguEMcBEK8BEEM6DgguEIAEELEDEIMBENQCOgUIABCSAzoHCAAQsQMQCjoHCAAQgAQQCjoKCAAQsQMQgwEQCjoECAAQCjoHCAAQyQMQDToECAAQDToECC4QDToHCC4Q1AIQDToKCC4QxwEQrwEQDToGCAAQDRAeOggIABANEAoQHjoGCAAQFhAeOggIABAWEAoQHkoECEEYAEoECEYYAFDqKFjBY2CyZWgIcAF4AYABwAKIAY0hkgEIMC4zMC4wLjGYAQCgAQHIAQrAAQE&sclient=gws-wiz" target="_blank">
+              <figure>
+                <img src="./images/detergent.png" alt="detergent">
+              </figure> Detergent</a>
+            </li>
+
+            <li><a href="https://www.google.com/search?q=metodo+limpiar+con+jabon&sxsrf=APq-WBsgMFpUx9-OClFjllPvUDXzEqQK1Q%3A1647009827935&ei=I2ArYvrSOOKWwbkPwIiXsAc&ved=0ahUKEwi68PDdpb72AhViSzABHUDEBXYQ4dUDCA4&uact=5&oq=metodo+limpiar+con+jabon&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeMggIIRAWEB0QHjIICCEQFhAdEB4yCAghEBYQHRAeMggIIRAWEB0QHjIICCEQFhAdEB4yCAghEBYQHRAeMggIIRAWEB0QHjIICCEQFhAdEB46BwgjELADECc6BAgjECc6BggAEBYQHkoECEEYAEoECEYYAFCZBFiGHWDGHmgBcAB4AIABwgGIAaUOkgEEMC4xNJgBAKABAcgBAcABAQ&sclient=gws-wiz" target="_blank">
+              <figure>
+                <img src="./images/soap.png" alt="bar soap">
+              </figure>Bar soap</a>
+            </li>
+
+            <li><a href="https://www.google.com/search?q=metodo+suavizante&sxsrf=APq-WBvYgtSR1S0_6T8ACrSfZMc1PMv3Ow%3A1647009848332&ei=OGArYsL5E4GVwbkPhc6KwAs&ved=0ahUKEwjC9c3npb72AhWBSjABHQWnArgQ4dUDCA4&uact=5&oq=metodo+suavizante&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoHCAAQRxCwAzoECCMQJzoFCAAQgAQ6CAgAEIAEEMkDOgsILhCABBDHARCvAToKCAAQgAQQhwIQFDoKCC4QgAQQhwIQFDoICC4QgAQQ1AI6EAgAEIAEEIcCELEDEIMBEBQ6CwgAEIAEELEDEIMBOg0IABCABBCHAhCxAxAUOggIABCABBCxAzoICAAQCBANEB5KBAhBGABKBAhGGABQ9gRYjTpg1jxoAnABeACAAZkBiAGmGpIBBDAuMjeYAQCgAQHIAQjAAQE&sclient=gws-wiz" target="_blank">
+              <figure>
+                <img src="./images/softener.png" alt="softener">
+              </figure> Softener</a>
+            </li>
+
+            <li><a href="https://www.google.com/search?q=metodo+hipoclorito&sxsrf=APq-WBvwjVePXUgXPia8LerEZmftMzv7cQ%3A1647009884094&ei=XGArYo2vBdqUwbkPg6-B6Ac&ved=0ahUKEwiNzdT4pb72AhVaSjABHYNXAH0Q4dUDCA4&uact=5&oq=metodo+hipocliroto&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEdKBAhBGABKBAhGGABQAFgAYIsFaABwAngAgAEAiAEAkgEAmAEAyAEIwAEB&sclient=gws-wiz" target="_blank">
+              <figcaption>
+                <img src="./images/chlorine.png" alt="chlorine">
+              </figcaption> Chlorine</a>
+            </li>
+
+          </ol>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
